@@ -12,7 +12,7 @@ body {
 
 /* header styling */
 .header {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("images/banner.png");
@@ -60,7 +60,7 @@ nav .nav-links li a:active {
 .header .text-box {
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -126,6 +126,10 @@ nav .fa {
 
   nav .nav-links ul {
     padding: 30px;
+  }
+
+  .header .text-box {
+    top: 50%;
   }
 }
 
