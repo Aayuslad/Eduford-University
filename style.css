@@ -68,6 +68,7 @@ nav .nav-links li a:active {
 
 .sub-header .header-text-box {
   top: 30%;
+  width: 100%;
 }
 
 .header p {
@@ -112,7 +113,7 @@ nav .nav-links li a:active {
     padding: 30px;
   }
 
-  .header .text-box {
+  .main .header-text-box {
     top: 50%;
   }
 }
