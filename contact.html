@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aayush Lad" />
+    <meta
+      name="keywords"
+      content="Eduford, Eduford University, Aayush Lad, Practice Project"
+    />
+    <meta name="discription" content="A University Website" />
+    <title>Eduford University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="header sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png" alt="" width="200"
+        /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-arrow-right" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+
+      <div class="header-text-box container">
+        <h1>Contact us</h1>
+      </div>
+    </section>
+
+    <!-- ---------Location Section------- -->
+    <section class="location container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1557.7060174897538!2d72.13294771123019!3d21.759101147822413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f508525917e95%3A0x599edf7047fa374!2sComputer%20Dept%2Cgec%20Bhavnagar!5e1!3m2!1sen!2sin!4v1689087612104!5m2!1sen!2sin"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- ----------Contacct-us Section-------- -->
+    <section class="contact-us container">
+      <div class="row">
+        <div class="col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>xyz Road, abc Bulding</h5>
+              <p>Gujrat, Bhavnagar, Vidhyanagar</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+91 9723165757</h5>
+              <p>Monady To Saturday, 9 AM To 6 PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <span>
+              <h5>aayushvlad@gmail.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="col">
+          <form action="">
+            <input type="text" name="name" id="name" placeholder="Your Nmae" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your E-mail Address"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Your Subject"
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------About us Section--------- -->
+    <footer>
+      <section class="aboutus container">
+        <h3>About us</h3>
+        <p>
+          We’re a leading research university with a heart. Founded in the
+          decade that the U.S. Constitution was signed, we’re the nation’s
+          oldest Catholic and Jesuit university. <br />We’re a community of
+          people who bridge our disparate experiences and identities. Meet the
+          people and places that make Eduford home.
+        </p>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+
+    <!-- java script for toggle menu -->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
